@@ -1,5 +1,6 @@
 *
 !.gitignore
 !pom.xml
+!README.md
 !src
 !example-data
