@@ -16,6 +16,8 @@ Run the compiled version of src/main/java/org/villastraylight/lectures/xmldemo/X
 1. path to the XSD file
 1. path to the XML file which shall be validated
 
+You'll find working example XSD and XML files in the ``example-data`` directory.
+
 ## XSLT
 
 Description for is TBD. File: src/main/java/org/villastraylight/lectures/xmldemo/XsltDemoApp.java
