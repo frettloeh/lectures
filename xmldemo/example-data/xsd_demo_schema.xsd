@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="notetype">
+        <xs:sequence>
+            <xs:element name="to" type="xs:string"/>
+            <xs:element name="from" type="xs:string"/>
+            <xs:element name="heading" type="xs:string"/>
+            <xs:element name="body" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="notes">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="note" type="notetype"/>
+                <xs:element name="historical-notes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="very-old-note" type="notetype" maxOccurs="1000"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
